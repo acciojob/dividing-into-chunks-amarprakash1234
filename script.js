@@ -2,7 +2,7 @@ const arr = [1, 2, 3, 4, 1, 0, 2, 2];
 
 const divide = (arr, n) => {
   // Write your code here
-	let arr = [];
+	let brr = [];
 	for(let i = 0; i < arr.length; i++) {
 		for(let j = i; j < arr.length; j++) {
 			let a = arr.slice(i, j+1);
@@ -11,11 +11,11 @@ const divide = (arr, n) => {
 				sum += a[k];
 			}
 			if(sum <= n) {
-				arr.push(a);
+				brr.push(a);
 			}
 		}
 	}
-	return arr;
+	return brr;
 };
 
 const n = prompt("Enter n: ");
